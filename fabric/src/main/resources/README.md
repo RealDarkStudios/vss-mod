@@ -1,0 +1,2 @@
+# HEY! YOU! STOP RIGHT THERE!
+## You shouldn't put any assets folder here (The mod logo has to be there for code reasons), only use fabric's resources for data, any universally supported texture/model files should go in common's assets.
