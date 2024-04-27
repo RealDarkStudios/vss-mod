@@ -20,6 +20,10 @@
   "tooltip.very_serious_steven.mask_of_seriousness_trinket_two": "§l§o because you all very busy person and stress full but not this time ,",
   "tooltip.very_serious_steven.mask_of_seriousness_trinket_three": "§l§o I am very serious! - Very Serious Steven 2024.",
 
-  "section_3": "ItemGroups",
-  "tab.very_serious_steven.very_serious_steven_tab": "Very Serious Steven"
+  "section3": "ItemGroups",
+  "tab.very_serious_steven.very_serious_steven_tab": "Very Serious Steven",
+
+  "section4": "Blocks",
+  "block.very_serious_steven.destabilized_dirt": "§4Destabilized Dirt",
+  "block.very_serious_steven.destabilized_grass": "§4Destabilized Grass"
 }
