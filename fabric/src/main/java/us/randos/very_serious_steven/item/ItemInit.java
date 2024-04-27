@@ -13,8 +13,8 @@ public class ItemInit {
         return Registry.register(Registries.ITEM, new Identifier(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER, name), item);
     }
 
+    // Example item
     // public static final Item WiiU = registerItem("wiiu", new Item(PropertyInit.GENERIC_ITEM_PROPERTY_SINGLE_ITEM));
-    //Example item
 
     public static void registerVerySeriousStevenItems() {
         VerySeriousStevenConstants.LOGGER.info(VerySeriousStevenConstants.VERY_SERIOUS_MOD_NAME_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER + " has registered its' items in the fabric env.");

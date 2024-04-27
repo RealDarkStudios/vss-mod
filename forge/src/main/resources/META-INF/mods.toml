@@ -24,3 +24,21 @@ mandatory = true
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
+[[dependencies.very_serious_steven]]
+modId = "curios"
+mandatory = true
+versionRange = "${curios_version_range}"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.very_serious_steven]]
+modId = "pekhui"
+mandatory = true
+versionRange = "${pekhui_version_range}"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.very_serious_steven]]
+modId = "midnightlib"
+mandatory = true
+versionRange = "${midnightlib_forge_version_range}"
+ordering = "NONE"
+side = "BOTH"
