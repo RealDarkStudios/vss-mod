@@ -86,7 +86,9 @@ public class MaskOfSeriousnessTrinket extends TrinketItem implements TrinketRend
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext options) {
         if (VerySeriousConfigFabric.showTooltips == true) {
-            tooltip.add(Text.translatable("tooltip.very_serious_steven.mask_of_seriousness_trinket"));
+            tooltip.add(Text.translatable("tooltip.very_serious_steven.mask_of_seriousness_trinket_one"));
+            tooltip.add(Text.translatable("tooltip.very_serious_steven.mask_of_seriousness_trinket_two"));
+            tooltip.add(Text.translatable("tooltip.very_serious_steven.mask_of_seriousness_trinket_three"));
             super.appendTooltip(stack, world, tooltip, options);
         }
     }

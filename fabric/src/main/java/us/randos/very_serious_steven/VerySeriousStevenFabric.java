@@ -34,6 +34,6 @@ public class VerySeriousStevenFabric implements ModInitializer {
         MidnightConfig.init(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER, VerySeriousConfigFabric.class);
 
         // Trinket Render
-        //TrinketRendererRegistry.registerRenderer(ItemInit.MASK_OF_SERIOUSNESS, (TrinketRenderer) ItemInit.MASK_OF_SERIOUSNESS);
+        TrinketRendererRegistry.registerRenderer(ItemInit.MASK_OF_SERIOUSNESS, (TrinketRenderer) ItemInit.MASK_OF_SERIOUSNESS);
     }
 }
