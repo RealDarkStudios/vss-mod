@@ -16,6 +16,8 @@ public class SiepertBlockItems {
 
     public static final RegistryObject<Item> DESTABILIZED_DIRT = ITEMS.register("destabilized_dirt",
             () -> new BlockItem(SiepertBlocks.DESTABILIZED_DIRT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DESTABILIZED_GRASS = ITEMS.register("destabilized_grass",
+            () -> new BlockItem(SiepertBlocks.DESTABILIZED_GRASS.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         LOGGER.info("Registering Siepert's BlockItems");

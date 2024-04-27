@@ -18,6 +18,8 @@ public class SiepertBlocks {
 
     public static final RegistryObject<Block> DESTABILIZED_DIRT = BLOCKS.register("destabilized_dirt",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).noOcclusion()));
+    public static final RegistryObject<Block> DESTABILIZED_GRASS = BLOCKS.register("destabilized_grass",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).noOcclusion()));
 
     public static void register(IEventBus eventBus) {
         LOGGER.info("Registering Siepert's Blocks");

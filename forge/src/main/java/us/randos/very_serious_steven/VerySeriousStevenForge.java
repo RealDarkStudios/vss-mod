@@ -41,5 +41,8 @@ public class VerySeriousStevenForge {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(SiepertBlockItems.DESTABILIZED_DIRT.get());
         }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(SiepertItems.MASK_OF_SERIOUSNESS.get());
+        }
     }
 }
