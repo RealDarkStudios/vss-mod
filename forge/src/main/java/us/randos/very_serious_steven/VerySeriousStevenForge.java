@@ -1,19 +1,22 @@
 package us.randos.very_serious_steven;
 
 import eu.midnightdust.lib.config.MidnightConfig;
+
 import net.minecraft.world.item.CreativeModeTabs;
+
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
 import us.randos.very_serious_steven.config.VerySeriousConfigForge;
 import us.randos.very_serious_steven.siepertArea.registration.SiepertBlockItems;
 import us.randos.very_serious_steven.siepertArea.registration.SiepertBlocks;
 import us.randos.very_serious_steven.siepertArea.registration.SiepertItems;
 
-// TODO: Any of the Forge contributors, please port the Mask Of Seriousness to Forge side, use Curios API as a replacement for Trinkets, Pekhui also works the same both sides.
+// TODO: Add custom Item class using Curios API, and properly implement the custom Curios slot type.
 @Mod(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER)
 public class VerySeriousStevenForge {
     
@@ -39,10 +42,13 @@ public class VerySeriousStevenForge {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(SiepertBlockItems.DESTABILIZED_DIRT.get());
+            event.accept(SiepertBlockItems.DESTABILIZED_DIRT);
         }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(SiepertItems.MASK_OF_SERIOUSNESS.get());
+            event.accept(SiepertItems.MASK_OF_SERIOUSNESS);
+        }
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(SiepertItems.MASK_OF_SERIOUSNESS);
         }
     }
 }
