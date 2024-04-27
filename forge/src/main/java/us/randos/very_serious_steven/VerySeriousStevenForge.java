@@ -5,9 +5,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import us.randos.very_serious_steven.config.VerySeriousConfigForge;
@@ -41,7 +39,7 @@ public class VerySeriousStevenForge {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(SiepertBlockItems.DESTABILIZED_SHAPE.get());
+            event.accept(SiepertBlockItems.DESTABILIZED_DIRT.get());
         }
     }
 }

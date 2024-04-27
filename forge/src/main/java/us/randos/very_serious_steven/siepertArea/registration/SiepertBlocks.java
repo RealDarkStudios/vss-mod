@@ -16,7 +16,7 @@ public class SiepertBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER);
 
-    public static final RegistryObject<Block> DESTABILIZED_SHAPE = BLOCKS.register("destabilized_shape",
+    public static final RegistryObject<Block> DESTABILIZED_DIRT = BLOCKS.register("destabilized_dirt",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).noOcclusion()));
 
     public static void register(IEventBus eventBus) {

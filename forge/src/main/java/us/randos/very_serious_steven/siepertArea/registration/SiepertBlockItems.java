@@ -14,8 +14,8 @@ public class SiepertBlockItems {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER);
 
-    public static final RegistryObject<Item> DESTABILIZED_SHAPE = ITEMS.register("destabilized_shape",
-            () -> new BlockItem(SiepertBlocks.DESTABILIZED_SHAPE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DESTABILIZED_DIRT = ITEMS.register("destabilized_dirt",
+            () -> new BlockItem(SiepertBlocks.DESTABILIZED_DIRT.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         LOGGER.info("Registering Siepert's BlockItems");
