@@ -1,6 +1,8 @@
 package us.randos.very_serious_steven;
 
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.minecraftforge.fml.common.Mod;
+import us.randos.very_serious_steven.config.VerySeriousConfigForge;
 
 @Mod(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER)
 public class VerySeriousStevenForge {
@@ -14,6 +16,7 @@ public class VerySeriousStevenForge {
         // Use Forge to bootstrap the Common mod.
         VerySeriousStevenConstants.LOGGER.info(VerySeriousStevenConstants.VERY_SERIOUS_MOD_NAME_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER + " has registered its' main class in the forge env.");
         VerySeriousStevenCommon.init();
-        
+        // Config
+        MidnightConfig.init(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER, VerySeriousConfigForge.class);
     }
 }

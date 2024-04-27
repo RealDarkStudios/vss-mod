@@ -9,7 +9,6 @@ displayName = "${mod_name}" #mandatory
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional (see https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/)
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional (displayed in the mod UI)
 logoFile = "very_serious_steven.png" #optional (needs to be in the root of your mod jar (root of your 'resources' folder))
-credits = "${credits}" #optional
 authors = "${mod_author}" #optional
 description = '''${description}''' #mandatory (Supports multiline text)
 [[dependencies.very_serious_steven]] #optional
@@ -22,23 +21,5 @@ side = "BOTH" # Side this dependency is applied on - 'BOTH', 'CLIENT' or 'SERVER
 modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_version_range}"
-ordering = "NONE"
-side = "BOTH"
-[[dependencies.very_serious_steven]]
-modId = "curios"
-mandatory = true
-versionRange = "${curios_version_range}"
-ordering = "NONE"
-side = "BOTH"
-[[dependencies.very_serious_steven]]
-modId = "pekhui"
-mandatory = true
-versionRange = "${pekhui_version_range}"
-ordering = "NONE"
-side = "BOTH"
-[[dependencies.very_serious_steven]]
-modId = "midnightlib"
-mandatory = true
-versionRange = "${midnightlib_forge_version_range}"
 ordering = "NONE"
 side = "BOTH"
