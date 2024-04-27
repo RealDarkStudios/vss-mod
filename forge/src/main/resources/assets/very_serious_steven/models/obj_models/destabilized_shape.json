@@ -1,7 +1,7 @@
 {
   "loader": "forge:obj",
   "flip_v": true,
-  "model": "very_serious_steven:obj_models/obJ_files/destabilized_shape.obj",
+  "model": "very_serious_steven:obj_models/obj_files/destabilized_shape.obj",
   "textures": {
     "texture0": "minecraft:block/dirt",
     "particle": "minecraft:block/dirt"
