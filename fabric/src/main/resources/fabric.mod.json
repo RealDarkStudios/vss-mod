@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "id": "very_serious_steven",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "homepage": "https://github.com/RealDarkStudios/vss-mod",
+        "sources": "https://github.com/RealDarkStudios/vss-mod"
+    },
+    "license": "${license}",
+    "icon": "assets/very_serious_steven/very_serious_steven.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "us.randos.very_serious_steven.VerySeriousStevenFabric"
+        ],
+        "client": [
+            "us.randos.very_serious_steven.VerySeriousStevenFabricClient"
+        ]
+    },
+    "mixins": [
+        "very_serious_steven.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.15.7",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}",
+        "java": ">=17",
+        "trinkets": ">=3.7.1",
+        "pehkui": ">=3.8.0+1.14.4-1.20.4",
+        "modmenu": ">=7.0.1",
+        "midnightlib": ">=1.4.1"
+    },
+    "suggests": {
+        "another-mod": "*"
+    },
+    "custom": {
+        "modmenu": {
+            "update_checker": false,
+            "links": {
+                "modmenu.discord": "https://discord.gg/csF2Uy3Cdh"
+            }
+        }
+    }
+}
+  
