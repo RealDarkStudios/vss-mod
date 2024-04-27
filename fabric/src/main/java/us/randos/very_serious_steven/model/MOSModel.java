@@ -15,7 +15,7 @@ public class MOSModel extends BipedEntityModel<LivingEntity> {
         ModelData modelData = BipedEntityModel.getModelData(Dilation.NONE, 0f);
         ModelPartData modelPartData = modelData.getRoot();
         ModelPartData head = modelPartData.addChild("head", ModelPartBuilder.create().uv(64, 64)
-                .cuboid(-8f, -12.0f, -4.2f, 16f, 16f, 0.1f), ModelTransform.NONE);
+                .cuboid(-8f, -11.0f, -4.2f, 16f, 16f, 0.1f), ModelTransform.NONE);
         return TexturedModelData.of(modelData, 64, 64);
     }
 }
