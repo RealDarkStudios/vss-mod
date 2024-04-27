@@ -7,10 +7,10 @@ import net.minecraft.util.Identifier;
 
 import us.randos.very_serious_steven.VerySeriousStevenConstants;
 
+// TODO: Add an enchantable armour tag, then port the mixins for the enchantment classes as well.
 public class TagInit {
 
-    //public static final TagKey<Item> ENCHANTABLE_WEAPON = TagKey.of(RegistryKeys.ITEM, new Identifier(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER, "enchantable_weapon"));
-    // If re-enabled, we can use this alongside some mixin stuff I know to allow our items to be enchanted - Mavity
+    public static final TagKey<Item> ENCHANTABLE_WEAPON = TagKey.of(RegistryKeys.ITEM, new Identifier(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER, "enchantable_weapon"));
 
     //LOGGER
     public static void registerVerySeriousStevenTags() {

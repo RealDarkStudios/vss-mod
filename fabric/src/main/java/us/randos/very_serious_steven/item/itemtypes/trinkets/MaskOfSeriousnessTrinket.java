@@ -8,6 +8,8 @@ import dev.emi.trinkets.api.client.TrinketRenderer;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumer;
@@ -32,10 +34,12 @@ import us.randos.very_serious_steven.VerySeriousStevenConstants;
 import us.randos.very_serious_steven.config.VerySeriousConfigFabric;
 import us.randos.very_serious_steven.model.MOSModel;
 
+import virtuoel.pehkui.api.ScaleData;
+import virtuoel.pehkui.api.ScaleTypes;
+
 import java.util.List;
 import java.util.UUID;
 
-// TODO: Copy over Pekhui code then decide what to make it do, also check that the tooltip renders with EnvType.CLIENT
 public class MaskOfSeriousnessTrinket extends TrinketItem implements TrinketRenderer {
     private static final Identifier TEXTURE = new Identifier(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER, "textures/item/trinkets/mos.png");
     private BipedEntityModel<LivingEntity> model;
@@ -76,7 +80,6 @@ public class MaskOfSeriousnessTrinket extends TrinketItem implements TrinketRend
     @Environment(EnvType.CLIENT)
     private BipedEntityModel<LivingEntity> getModel() {
         if (this.model == null) {
-            // Vanilla 1.17 uses EntityModels, EntityModelLoader and EntityModelLayers
             this.model = new MOSModel(MOSModel.getTexturedModelData().createModel());
         }
 
@@ -91,5 +94,29 @@ public class MaskOfSeriousnessTrinket extends TrinketItem implements TrinketRend
             tooltip.add(Text.translatable("tooltip.very_serious_steven.mask_of_seriousness_trinket_three"));
             super.appendTooltip(stack, world, tooltip, options);
         }
+    }
+
+    @Override
+    public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        ScaleData playerHealth = ScaleTypes.HEALTH.getScaleData(entity);
+        ScaleData playerDefense = ScaleTypes.DEFENSE.getScaleData(entity);
+        playerHealth.setScale(playerHealth.getBaseScale() * 2);
+        playerDefense.setScale(playerDefense.getBaseScale() * 2);
+        /*if (entity.getUuidAsString() == "get steven's uuid and put it here") {
+            entity.playSound(SoundInit.PLACEHOLDER, 1.0f, 1.0f);
+        }*/
+    }
+
+    @Override
+    public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        ScaleData playerHealth = ScaleTypes.HEALTH.getScaleData(entity);
+        ScaleData playerDefense = ScaleTypes.DEFENSE.getScaleData(entity);
+        playerHealth.resetScale();
+        playerDefense.resetScale();
+    }
+
+    @Override
+    public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        return true;
     }
 }
