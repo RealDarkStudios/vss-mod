@@ -8,7 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 import us.randos.very_serious_steven.VerySeriousStevenConstants;
 
-public class ModItems {
+public class SiepertItems {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER);
