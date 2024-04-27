@@ -98,25 +98,23 @@ public class MaskOfSeriousnessTrinket extends TrinketItem implements TrinketRend
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        ScaleData playerHealth = ScaleTypes.HEALTH.getScaleData(entity);
-        ScaleData playerDefense = ScaleTypes.DEFENSE.getScaleData(entity);
-        playerHealth.setScale(playerHealth.getBaseScale() * 2);
-        playerDefense.setScale(playerDefense.getBaseScale() * 2);
-        /*if (entity.getUuidAsString() == "get steven's uuid and put it here") {
-            entity.playSound(SoundInit.PLACEHOLDER, 1.0f, 1.0f);
-        }*/
+        ScaleData playerBase = ScaleTypes.BASE.getScaleData(entity);
+        playerBase.setScale(playerBase.getBaseScale() * 2);
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        ScaleData playerHealth = ScaleTypes.HEALTH.getScaleData(entity);
-        ScaleData playerDefense = ScaleTypes.DEFENSE.getScaleData(entity);
-        playerHealth.resetScale();
-        playerDefense.resetScale();
+        ScaleData playerBase = ScaleTypes.BASE.getScaleData(entity);
+        playerBase.resetScale();
     }
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        /*if (entity.getUuidAsString() == "get steven's uuid and put it here") {
+            return true
+        }
+        return false;*/
         return true;
+
     }
 }
