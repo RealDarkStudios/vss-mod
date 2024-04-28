@@ -9,6 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import us.randos.very_serious_steven.VerySeriousStevenConstants;
+import us.randos.very_serious_steven.siepertArea.thingy.item.CheeseBlock;
 
 public class SiepertBlocks {
     public static final DeferredRegister<Block> BLOCKS =
@@ -16,8 +17,8 @@ public class SiepertBlocks {
 
     public static final RegistryObject<Block> DESTABILIZED_DIRT = BLOCKS.register("destabilized_dirt",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).noOcclusion()));
-    public static final RegistryObject<Block> DESTABILIZED_GRASS = BLOCKS.register("destabilized_grass",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> CHEESE_BLOCK = BLOCKS.register("cheese_block",
+            () -> new CheeseBlock(BlockBehaviour.Properties.copy(Blocks.CAKE).noOcclusion()));
 
     public static void register(IEventBus eventBus) {
         VerySeriousStevenConstants.LOGGER.info("Registering Siepert's Blocks");

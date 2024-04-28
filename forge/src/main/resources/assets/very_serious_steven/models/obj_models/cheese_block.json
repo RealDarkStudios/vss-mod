@@ -1,10 +1,10 @@
 {
   "loader": "forge:obj",
   "flip_v": true,
-  "model": "very_serious_steven:obj_models/obj_files/destabilized_grass.obj",
+  "model": "very_serious_steven:obj_models/obj_files/cheese_block.obj",
   "textures": {
-    "texture0": "minecraft:block/grass_block_top",
-    "particle": "minecraft:block/grass_block_top"
+    "texture0": "very_serious_steven:obj_models/cheese_block",
+    "particle": "very_serious_steven:obj_models/cheese_block"
   },
   "display": {
     "thirdperson_righthand": {

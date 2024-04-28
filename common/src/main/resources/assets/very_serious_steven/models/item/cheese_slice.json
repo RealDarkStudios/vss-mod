@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "very_serious_steven:item/cheese_slice"
+  }
+}

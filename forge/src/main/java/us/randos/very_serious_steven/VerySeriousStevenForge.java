@@ -53,6 +53,7 @@ public class VerySeriousStevenForge {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(SiepertBlockItems.DESTABILIZED_DIRT);
+            event.accept(SiepertBlockItems.CHEESE_BLOCK);
         }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(SiepertItems.MASK_OF_SERIOUSNESS);
