@@ -5,10 +5,14 @@
     "name": "${mod_name}",
     "description": "${description}",
     "authors": [
-        "${mod_author}"
+        "Mod Authors: ${mod_author}"
+    ],
+    "contributors": [
+        "Steven Stone, for being so serious."
     ],
     "contact": {
         "homepage": "https://github.com/RealDarkStudios/vss-mod",
+        "issues": "https://github.com/RealDarkStudios/vss-mod/issues",
         "sources": "https://github.com/RealDarkStudios/vss-mod"
     },
     "license": "${license}",
@@ -20,6 +24,9 @@
         ],
         "client": [
             "us.randos.very_serious_steven.VerySeriousStevenFabricClient"
+        ],
+        "fabric-datagen": [
+            "us.randos.very_serious_steven.VerySeriousDataGenerator"
         ]
     },
     "mixins": [

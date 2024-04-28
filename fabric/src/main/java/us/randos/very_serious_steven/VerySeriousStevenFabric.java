@@ -37,5 +37,7 @@ public class VerySeriousStevenFabric implements ModInitializer {
 
         // Trinket Render
         TrinketRendererRegistry.registerRenderer(ItemInit.MASK_OF_SERIOUSNESS, (TrinketRenderer) ItemInit.MASK_OF_SERIOUSNESS);
+
+        // Modify Loot Table Events
     }
 }

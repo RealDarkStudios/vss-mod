@@ -23,3 +23,21 @@ mandatory = true
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
+[[dependencies.very_serious_steven]]
+modId = "pehkui"
+mandatory = true
+versionRange = "*"
+ordering = "BEFORE"
+side = "BOTH"
+[[dependencies.very_serious_steven]]
+modId = "curios"
+mandatory = true
+versionRange = "*"
+ordering = "BEFORE"
+side = "BOTH"
+[[dependencies.very_serious_steven]]
+modId = "midnightlib"
+mandatory = true
+versionRange = "*"
+ordering = "BEFORE"
+side = "BOTH"
