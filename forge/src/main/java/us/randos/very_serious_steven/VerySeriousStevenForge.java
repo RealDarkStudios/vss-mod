@@ -57,6 +57,7 @@ public class VerySeriousStevenForge {
         }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(SiepertItems.MASK_OF_SERIOUSNESS);
+            event.accept(SiepertItems.CHEESE_SLICE);
         }
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(SiepertItems.MASK_OF_SERIOUSNESS);
