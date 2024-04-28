@@ -2,5 +2,6 @@
   "order": 20,
   "size": 1,
   "icon": "curios:slot/empty_custom_slot",
-  "add_cosmetic": true
+  "add_cosmetic": true,
+  "validators": ["very_serious_steven:mask"]
 }
