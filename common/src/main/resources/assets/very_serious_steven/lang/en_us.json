@@ -14,7 +14,6 @@
 
   "section2_1": "Names",
   "item.very_serious_steven.mask_of_seriousness": "§4Mask Of Seriousness",
-  "item.very_serious_steven.cheese_slice": "Slice of Cheese",
 
   "section2_2": "Tooltips",
   "tooltip.very_serious_steven.mask_of_seriousness_trinket_one": "§l§oI do funny things because that I can make you all laugh and happy ,",
@@ -27,5 +26,8 @@
   "section4": "Blocks",
   "block.very_serious_steven.destabilized_dirt": "§4Destabilized Dirt",
   "block.very_serious_steven.destabilized_grass": "§4Destabilized Grass",
-  "block.very_serious_steven.cheese_block": "Block of Cheese"
+  "block.very_serious_steven.cheese_block": "Block of Cheese",
+
+  "section5": "Items",
+  "item.very_serious_steven.cheese_slice": "Slice of Cheese"
 }

@@ -25,5 +25,9 @@
 
   "section4": "Blocks",
   "block.very_serious_steven.destabilized_dirt": "§4Destabilized Dirt",
-  "block.very_serious_steven.destabilized_grass": "§4Destabilized Grass"
+  "block.very_serious_steven.destabilized_grass": "§4Destabilized Grass",
+  "block.very_serious_steven.cheese_block": "Block of Cheese",
+
+  "section5": "Items",
+  "item.very_serious_steven.cheese_slice": "Slice of Cheese"
 }
