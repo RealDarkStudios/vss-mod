@@ -9,13 +9,14 @@ import net.minecraftforge.registries.RegistryObject;
 
 import us.randos.very_serious_steven.VerySeriousStevenConstants;
 import us.randos.very_serious_steven.siepertArea.thingy.item.CheeseItem;
+import us.randos.very_serious_steven.siepertArea.thingy.item.MaskOfSeriousnessItem;
 
 public class SiepertItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER);
 
     public static final RegistryObject<Item> MASK_OF_SERIOUSNESS = ITEMS.register("mask_of_seriousness",
-            () -> new Item(new Item.Properties())); // TODO: This should have a custom Item class using the Curios API
+            () -> new MaskOfSeriousnessItem(new Item.Properties())); // TODO: The custom item class should use the Curios API
 
     public static final RegistryObject<Item> CHEESE_SLICE = ITEMS.register("cheese_slice",
             () -> new CheeseItem(new Item.Properties().food(
