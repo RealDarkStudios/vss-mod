@@ -2,6 +2,8 @@ package us.randos.very_serious_steven;
 
 import eu.midnightdust.lib.config.MidnightConfig;
 
+import net.minecraft.CrashReport;
+import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 
@@ -12,12 +14,16 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+import net.minecraftforge.fml.loading.FMLLoader;
+import net.minecraftforge.fml.loading.FMLPaths;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotResult;
 import us.randos.very_serious_steven.config.VerySeriousConfigForge;
 import us.randos.very_serious_steven.siepertArea.registration.SiepertBlockItems;
 import us.randos.very_serious_steven.siepertArea.registration.SiepertBlocks;
 import us.randos.very_serious_steven.siepertArea.registration.SiepertItems;
+
+import net.minecraftforge.fml.ModList;
 
 import java.util.function.Predicate;
 
@@ -40,6 +46,11 @@ public class VerySeriousStevenForge {
         MidnightConfig.init(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER, VerySeriousConfigForge.class);
 
         modEventBus.addListener(this::addCreative);
+
+        if (ModList.get().isLoaded("optifine")) {
+            Minecraft.getInstance().close();
+            VerySeriousStevenConstants.LOGGER.info("Fuck you Optifine :)");
+        }
 
         //curios
 
