@@ -6,6 +6,9 @@ import dev.emi.trinkets.api.client.TrinketRendererRegistry;
 import eu.midnightdust.lib.config.MidnightConfig;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
+
+import net.minecraft.client.MinecraftClient;
 
 import us.randos.very_serious_steven.block.BlockInit;
 import us.randos.very_serious_steven.config.VerySeriousConfigFabric;
@@ -31,6 +34,11 @@ public class VerySeriousStevenFabric implements ModInitializer {
         TagInit.registerVerySeriousStevenTags();
         PropertyInit.registerVerySeriousStevenProperties();
         ItemGroupInit.registerVerySeriousStevenItemGroups();
+
+        // Fuck you OptiFine :D
+        if (FabricLoader.getInstance().isModLoaded("optifabric")) {
+            MinecraftClient.getInstance().close();
+        }
 
         // Config
         MidnightConfig.init(VerySeriousStevenConstants.VERY_SERIOUS_MOD_ID_FOR_THE_COOLEST_MOD_IN_EXISTENCE_NAMED_VERY_SERIOUS_STEVEN_MOD_FOR_THE_KAUPENHUB_SERVER, VerySeriousConfigFabric.class);
